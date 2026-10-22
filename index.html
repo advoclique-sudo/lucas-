@@ -723,5 +723,19 @@ var WA_MENSAGEM = "Olá! Vim pela página de Direito Trabalhista e gostaria de u
   }
 })();
 </script>
+<!-- Google Ads: conversao Contato no clique do WhatsApp -->
+<script>
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event','conversion',{
+        'send_to':'AW-18517584392/Yp7vCJ6khqYdEIjU7_1E',
+        'value':1.0,
+        'currency':'BRL',
+        'transport_type':'beacon'
+      });
+    }
+  });
+</script>
 </body>
 </html>
